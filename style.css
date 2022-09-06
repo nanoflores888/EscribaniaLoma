@@ -1,0 +1,172 @@
+html,
+body {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.topnav {
+    background-color: whitesmoke;
+    overflow: hidden;
+    font-family: "Barlow";
+}
+
+.topnav a {
+    float: left;
+    color: #002ab6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #002ab6;
+    color: white;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+h1,
+h2 {
+    font-family: "Aboreto";
+    color: rgb(34, 34, 34);
+    text-shadow: rgb(71, 71, 71) -8px 8px 8px;
+}
+
+
+.maintitle {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    margin-left: 140px;
+}
+
+.sndtitle {
+    font-family: "Barlow";
+    position: absolute;
+    top: 27%;
+    left: 8%;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-left: 0px;
+    transform: translate(-50%, -50%);
+    border-width: 2px;
+    border-color: #fff;
+    border-style: solid;
+    font-size: 1, 5rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+.sndtitle:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.sndtitle a:link {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.testimonios {
+    background-color: #f3f3f3;
+    padding-top: 10px;
+    font-family: "Barlow";
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.tt {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 24.6px;
+}
+
+.txtub {
+    font-family: "Dosis";
+    color: gray;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.map {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.caro {
+    background-color: #f3f3f3;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.caroimage {
+    flex-basis: 40%
+}
+
+.caroname {
+    padding-left: 20px;
+}
+
+.desc {
+    padding-left: 20px;
+    font-family: "Aboreto";
+}
+
+.ti3 {
+    padding-left: 20px;
+    font-family: "Aboreto";
+}
+
+
+.ti3a {
+    padding-left: 20px;
+    font-family: "Aboreto";
+}
+
+@media screen and (min-width: 601px) {
+    div {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    div {
+      font-size: 2px;
+    }
+  }
