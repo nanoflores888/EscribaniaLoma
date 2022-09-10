@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     background-color: #e8e8e8;
     width: 100%;
     height: 100%;
@@ -7,12 +6,7 @@ body {
     padding: 0px;
     overflow-x: hidden;
 }
-
-.responsive {
-    width: 100%;
-    height: auto;
-}
-
+/* Barra navegacion */
 .topnav {
     background-color: whitesmoke;
     overflow: hidden;
@@ -23,9 +17,9 @@ body {
     float: left;
     color: #002ab6;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1vw 1vw;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 2vw;
 }
 
 .topnav a:hover {
@@ -38,42 +32,34 @@ body {
     color: white;
 }
 
+.material-icons {
+    overflow: hidden;
+    size: 2vw;
+}
+
+/* Imagen principal */
 .container {
     position: relative;
-    text-align: center;
-    color: black;
 }
-
-h1,
-h2 {
-    font-family: "Aboreto";
-    color: rgb(34, 34, 34);
-    text-shadow: rgb(71, 71, 71) -8px 8px 8px;
-}
-
 
 .maintitle {
     position: absolute;
-    top: 20%;
-    left: 15%;
+    top: 10vw;
+    left: 29vw;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
-    margin-left: 140px;
+    font-size: 4vw;
 }
 
 .sndtitle {
     font-family: "Barlow";
     position: absolute;
-    top: 27%;
-    left: 8%;
-    border-radius: 25px;
-    margin-top: 25px;
-    margin-left: 0px;
-    transform: translate(-50%, -50%);
-    border-width: 2px;
+    top: 16vw;
+    left: 2vw;
+    font-size: 1.5vw;
+    border-radius: 2vw;
+    border-width: 0.2vw;
     border-color: #fff;
     border-style: solid;
-    font-size: 1, 5rem;
     background: transparent;
     cursor: pointer;
 }
@@ -85,44 +71,48 @@ h2 {
 
 .sndtitle a:link {
     color: white;
-    padding: 10px 20px;
+    font-size: 1.5vw;
+    padding: 1vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
 
+/* Testimonios */
 .testimonios {
     background-color: #f3f3f3;
-    padding-top: 10px;
+    padding-top: 1vw;
     font-family: "Barlow";
     position: relative;
-    width: 100%;
+    width: 100vw;
     text-align: center;
-    margin-top: 0px;
 }
 
 .tt {
     position: relative;
     text-align: center;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 24.6px;
+    width: 98vw;
+    padding: 2vw;
+    margin-bottom: 2vw;
 }
 
+/* Ubicacion */
 .txtub {
     font-family: "Dosis";
     color: gray;
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 
 .map {
     position: relative;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 8vw;
+    width: 100vw;
 }
 
+/* Datos Escribana */
 .caro {
     background-color: #f3f3f3;
     padding-top: 10px;
@@ -132,7 +122,7 @@ h2 {
 }
 
 img {
-    max-width: 100%;
+    max-width: 100vw;
 }
 
 .caroimage {
@@ -160,13 +150,20 @@ img {
 }
 
 @media screen and (min-width: 601px) {
-    div {
+    .responsive {
       font-size: 16px;
     }
   }
 
   @media screen and (max-width: 600px) {
-    div {
-      font-size: 2px;
+    .responsive {
+      font-size: 10px;
     }
   }
+
+/* Estilos de titulos */
+  h1, h2 {
+    font-family: "Aboreto";
+    color: rgb(34, 34, 34);
+    text-shadow: rgb(71, 71, 71) -0.8vw 0.8vw 0.8vw;
+}
