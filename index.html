@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
     <link rel="stylesheet" href="style.css">
@@ -16,19 +16,15 @@
 
 <body>
     <header>
-        <div>
-            <nav>
-                <div class="topnav responsive">
-                    <a href="index.html">Escribanía Loma</a>
-                    <a href="https://www.google.com/maps/dir//Escriban%C3%ADa+Loma/@-34.3953437,-58.8084286,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95bc9f80bc046f49:0xcac6ed7f2b2861c2!2m2!1d-58.7383885!2d-34.3953637"
-                        target="_blank"><i style="font-size: 2vw;" class="material-icons">directions</i> Cómo
-                        Llegar</a>
-                </div>
-            </nav>
-        </div>
+        <nav>
+            <div id="header">
+                <iframe src="menu/menu.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" height="30" width=100%>
+                </iframe>
+            </div>
+        </nav>
     </header>
     <section>
-        <div class="container responsive">
+        <div id="Top" class="container responsive">
             <img style="width: 100vw;" class="imgmain" src="img/indexmain.jpg" alt="main">
             <div class="maintitle">
                 <h1>Escribanía Loma</h1>
@@ -37,7 +33,7 @@
         </div>
     </section>
     <section>
-        <div class="testimonios responsive">
+        <div id="Testimonios" class="testimonios responsive">
             <h2>Testimonios</h2>
             <p>
             <div class="tt responsive">
@@ -73,7 +69,7 @@
         </div>
     </section>
     <section>
-        <div class="responsive" style="text-align: center;">
+        <div id="Mapa" class="responsive" style="text-align: center;">
             <h2>Ubicación</h2>
         </div>
         <div class="txtub responsive">
@@ -92,14 +88,15 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <div class="caro responsive container">
+    <div id="acercade" class="caro responsive container">
         <div class="caroimg responsive">
-          <img src="img/caro.jpg">
+            <img src="img/caro.jpg">
         </div>
         <div class="caroname responsive">
-          <h2>CAROLINA V. LOMA DE STIER, 
-            <br>
-            Escribana</h2>
+            <h2>CAROLINA V. LOMA DE STIER,
+                <br>
+                Escribana
+            </h2>
             <div class="desc responsive">
                 <p>Notaria Titular del Registro nº 7 de Escobar.</p>
             </div>
@@ -107,19 +104,20 @@
                 <h3>¿Qué es un Escribano?</h3>
             </div>
             <div class="ti3a responsive">
-                <p>Cumple con una función pública delegada por el Estado. 
-                    <br> 
+                <p>Cumple con una función pública delegada por el Estado.
+                    <br>
                     A través de la fe pública garantiza la
-                    seguridad jurídica.</p>
+                    seguridad jurídica.
+                </p>
             </div>
         </div>
-      </div>
+    </div>
     <footer>
-        <p class="responsive" style="text-align: left; color: gray;">
+        <p class="responsive" style="text-align: center; color: gray;">
             ©2019 Escribanía Carolina V. Loma de Stier. Todos los derechos reservados.
         </p>
         <p class="responsive" style="text-align: center; font-family: Cambria; color: gray;">
-            Develop by NIX Power Team
+            Developed by NIX Power Team
         </p>
     </footer>
 </body>
