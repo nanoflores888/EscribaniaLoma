@@ -8,32 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Barra navegacion */
-.topnav {
-    background-color: whitesmoke;
-    overflow: hidden;
-    font-family: "Barlow";
-}
-
-.topnav a {
-    float: left;
-    color: #002ab6;
-    text-align: center;
-    padding: 1vw 1vw;
-    text-decoration: none;
-    font-size: 2vw;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #002ab6;
-    color: white;
-}
-
 /* Imagen principal */
 .container {
     position: relative;
@@ -190,4 +164,10 @@ h2 {
     font-family: "Aboreto";
     color: rgb(34, 34, 34);
     text-shadow: rgb(71, 71, 71) -0.8vw 0.8vw 0.8vw;
+}
+
+header{
+        position: sticky;
+        top: 0;
+        z-index: 999;
 }
