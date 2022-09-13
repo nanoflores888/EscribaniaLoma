@@ -8,11 +8,54 @@ body {
     overflow-x: hidden;
 }
 
+.grid {
+    display: grid;
+    grid-template-areas:
+        'menu menu menu menu'
+        'top top top top'
+        'mapa mapa mapa mapa'
+        'caro caro testi testi'
+        'footer footer footer footer';
+    gap: 0;
+    background-color: #e8e8e8;
+    grid-template-rows: 1fr;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #e8e8e8;
+    padding: 0.7vw;
+}
+
+.top {
+    grid-area: top;
+
+}
+
+.testi {
+    grid-area: testi;
+
+}
+
+.mapa {
+    grid-area: mapa;
+
+}
+
+.caro {
+    grid-area: caro;
+
+}
+
+.footer {
+    grid-area: footer;
+
+}
+
 /* Imagen principal */
 .container {
     position: relative;
     overflow-x: hidden;
-    width: 100vw;
 }
 
 .maintitle {
@@ -53,17 +96,15 @@ body {
 /* Testimonios */
 .testimonios {
     background-color: #f3f3f3;
-    padding-top: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     font-family: "Barlow";
-    position: relative;
-    width: 100vw;
     text-align: center;
 }
 
 .tt {
     position: relative;
     text-align: center;
-    width: 96vw;
     padding: 2vw;
     margin-bottom: 2vw;
 }
@@ -74,7 +115,6 @@ body {
     color: gray;
     position: relative;
     text-align: center;
-    width: 100vw;
 }
 
 .responsive-map-container {
@@ -111,38 +151,25 @@ body {
 /* Datos Escribana */
 .caro {
     background-color: #f3f3f3;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-    display: flex;
+    display: relative;
+}
+
+.caroimg {
+    flex-basis: 40%;
+    padding-top: 2vw;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-img {
-    max-width: 100vw;
-}
-
-.caroimage {
-    flex-basis: 40%
-}
-
 .caroname {
-    padding-left: 4vw;
+    padding: 2vw;
+    text-align: center;
 }
 
 .desc {
-    padding-left: 2vw;
-    font-family: "Aboreto";
-}
-
-.ti3 {
-    padding-left: 2vw;
-    font-family: "Aboreto";
-}
-
-
-.ti3a {
-    padding-left: 2vw;
+    padding: 2vw;
+    text-align: center;
     font-family: "Aboreto";
 }
 
@@ -166,8 +193,8 @@ h2 {
     text-shadow: rgb(71, 71, 71) -0.8vw 0.8vw 0.8vw;
 }
 
-header{
-        position: sticky;
-        top: 0;
-        z-index: 999;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
