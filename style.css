@@ -15,16 +15,30 @@ body {
         'top top top top'
         'mapa mapa mapa mapa'
         'caro caro testi testi'
+        'trami trami trami trami'
         'footer footer footer footer';
     gap: 0;
     background-color: #e8e8e8;
     grid-template-rows: 1fr;
 }
 
+@media screen and (max-width: 601px) {
+
+    .grid {
+        grid-template-areas:
+            'menu menu menu menu'
+            'top top top top'
+            'mapa mapa mapa mapa'
+            'caro caro caro caro'
+            'testi testi testi testi'
+            'trami trami trami trami'
+            'footer footer footer footer';
+    }
+}
+
 .menu {
     grid-area: menu;
-    background-color: #e8e8e8;
-    padding: 0.7vw;
+    background-color: #ddd;
 }
 
 .top {
@@ -52,6 +66,11 @@ body {
 
 }
 
+.trami {
+    grid-area: trami;
+
+}
+
 /* Imagen principal */
 .container {
     position: relative;
@@ -68,19 +87,25 @@ body {
 .sndtitle {
     font-family: "Barlow";
     position: absolute;
+    padding: 1vw;
     top: 16vw;
     left: 2vw;
     font-size: 1.5vw;
+    color: #fff;
     border-radius: 2vw;
     border-width: 0.2vw;
     border-color: #fff;
     border-style: solid;
     background: transparent;
     cursor: pointer;
+    -webkit-transition: all 0.5s;
+    text-align: center;
+    overflow: hidden;
 }
 
 .sndtitle:hover {
     text-decoration: none;
+    letter-spacing: 0.5em;
     background: rgba(255, 255, 255, 0.5);
 }
 
@@ -91,6 +116,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    -webkit-transition: all 0.25s;
 }
 
 /* Testimonios */
@@ -100,6 +126,13 @@ body {
     padding-bottom: 2vw;
     font-family: "Barlow";
     text-align: center;
+}
+
+@media screen and (max-width: 601px) {
+
+    .testimonios {
+        background-color: #e8e8e8;
+    }
 }
 
 .tt {
@@ -162,6 +195,15 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width: 601px) {
+
+    .caroimg {
+        width: 100%;
+        height: auto;
+        margin-top: 20vw;
+    }
+}
+
 .caroname {
     padding: 2vw;
     text-align: center;
@@ -186,15 +228,222 @@ body {
 }
 
 /* Estilos de titulos */
-h1,
+h1 {
+    font-family: "Dancing Script";
+    color: rgb(34, 34, 34);
+    text-shadow: rgb(71, 71, 71) -0.8vw 0.8vw 0.8vw;
+}
+
 h2 {
     font-family: "Aboreto";
     color: rgb(34, 34, 34);
     text-shadow: rgb(71, 71, 71) -0.8vw 0.8vw 0.8vw;
 }
 
-header {
-    position: sticky;
+/* Tramites */
+.tramites {
+    padding: 4vw;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+@media screen and (min-width: 601px) {
+    .accordion {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .accordion {
+        font-size: 10px;
+    }
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 2vw;
+    font-family: "Dosis";
+    background-color: whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Menu */
+#container__menu {
+    z-index: 111;
+}
+
+.navT {
+    -webkit-transition: all 0.25s;
+    z-index: 111;
+    cursor: pointer;
+    width: 100%;
+    background: #212121;
+    height: 65px;
+    left: 0;
     top: 0;
-    z-index: 999;
+    position: fixed;
+}
+
+.navT .icon {
+    -webkit-transition: all 0.25s;
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    left: 15px;
+    top: 30px;
+    background-color: white;
+}
+
+.navT .icon:before,
+.navT .icon:after {
+    -webkit-transition: all 0.25s;
+    width: 30px;
+    height: 1px;
+    left: 0;
+    background: white;
+    position: absolute;
+    content: "";
+}
+
+.navT .icon:before {
+    top: -10px;
+}
+
+.navT .icon:after {
+    top: 10px;
+}
+
+.navT:hover {
+    background: black;
+}
+
+.navT:hover .icon:before {
+    top: -12px;
+}
+
+.navT:hover .icon:after {
+    top: 12px;
+}
+
+.navT.active .icon {
+    -webkit-transform: rotate(180deg);
+    background-color: transparent;
+    left: 10px;
+}
+
+.navT.active .icon:before,
+.navT.active .icon:after {
+    top: 0;
+}
+
+.navT.active .icon:before {
+    -webkit-transform: rotate(45deg);
+}
+
+.navT.active .icon:after {
+    -webkit-transform: rotate(-45deg);
+}
+
+#menu {
+    z-index: 111;
+    -webkit-transition: all 0.5s;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 65px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid transparent;
+    overflow: hidden;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    letter-spacing: 0.4em;
+}
+
+#menu li:first-child {
+    margin-top: 0;
+}
+
+#menu li {
+    -webkit-transition: all 0.2s;
+    margin-top: 20px;
+    padding: 5px 0;
+    color: rgb(0, 0, 0);
+}
+
+#menu a {
+    padding: 8px;
+    -webkit-transition: all 0.25s;
+    cursor: pointer;
+}
+
+#menu a:hover {
+    letter-spacing: 0.5em;
+    text-decoration: underline;
+}
+
+#menu.open {
+    height: 100%;
+    width: 100%;
+    background: #7a7a7a;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 600px) {
+    .navT {
+        height: 7vw;
+
+    }
+
+    .navT .icon {
+        height: 0.1vw;
+        top: 3.5vw;
+    }
+
+    .navT .icon:before,
+    .navT .icon:after {
+        height: 0.1vw;
+    }
+
+    #menu {
+        top: 7vw;
+    }
 }
