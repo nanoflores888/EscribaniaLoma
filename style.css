@@ -22,6 +22,8 @@ body {
     grid-template-rows: 1fr;
 }
 
+
+
 @media screen and (max-width: 601px) {
 
     .grid {
