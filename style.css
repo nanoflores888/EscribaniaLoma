@@ -13,7 +13,7 @@ body {
     grid-template-areas:
         'menu menu menu menu'
         'top top top top'
-        'mapa mapa mapa mapa'
+        'ubi ubi ubi ubi'
         'caro caro testi testi'
         'trami trami trami trami'
         'footer footer footer footer';
@@ -28,7 +28,7 @@ body {
         grid-template-areas:
             'menu menu menu menu'
             'top top top top'
-            'mapa mapa mapa mapa'
+            'ubi ubi ubi ubi'
             'caro caro caro caro'
             'testi testi testi testi'
             'trami trami trami trami'
@@ -42,7 +42,7 @@ body {
         grid-template-areas:
             'menu menu menu menu'
             'top top top top'
-            'mapa mapa mapa mapa'
+            'ubi ubi ubi ubi'
             'caro caro caro caro'
             'testi testi testi testi'
             'trami trami trami trami'
@@ -56,7 +56,7 @@ body {
         grid-template-areas:
             'menu menu menu menu'
             'top top top top'
-            'mapa mapa mapa mapa'
+            'ubi ubi ubi ubi'
             'caro caro testi testi'
             'trami trami trami trami'
             'footer footer footer footer';
@@ -78,8 +78,8 @@ body {
 
 }
 
-.mapa {
-    grid-area: mapa;
+.ubi {
+    grid-area: ubi;
 
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .sndtitle {
-    font-family: "Barlow";
+    font-family: "Dancing Script";
     position: absolute;
     padding: 1vw;
     top: 16vw;
@@ -160,7 +160,7 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.sndtitle a:link {
+.sndtitle a:link, a:visited {
     color: white;
     font-size: 1.5vw;
     padding: 1vw;
@@ -179,7 +179,6 @@ body {
     }
 
     .sndtitle a:link {
-        color: white;
         font-size: 3vw;
     }
 }
@@ -193,7 +192,6 @@ body {
     }
 
     .sndtitle a:link {
-        color: white;
         font-size: 3vw;
     }
 }
@@ -608,6 +606,11 @@ h2 {
 #menu a:hover {
     letter-spacing: 0.5em;
     text-decoration: underline;
+}
+
+#menu a:visited, a:link {
+    color: #e8e8e8;
+    text-decoration: none;
 }
 
 #menu.open {

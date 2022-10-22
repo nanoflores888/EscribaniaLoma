@@ -1,11 +1,17 @@
 html,
 body {
-    background-color: #e8e8e8;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+  background-color: #e8e8e8;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.form-group {
+  background-color: #e8e8e8;
+  margin: 1vw;
+  padding: 1vw;
 }
 
 .btn {
