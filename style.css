@@ -362,7 +362,7 @@ a:visited {
 
     .responsive-map-container {
         position: relative;
-        padding-bottom: 80vw;
+        padding-bottom: 40vw;
         padding-top: 30vw;
         height: 0;
         overflow: hidden;
@@ -372,7 +372,7 @@ a:visited {
     .responsive-map-container object,
     .responsive-map-container embed {
         position: absolute;
-        top: 8vw;
+        top: 10vw;
         left: 20vw;
         width: 60%;
         height: 60%;
