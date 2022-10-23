@@ -7,119 +7,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c290335d99.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Escribanía Loma</title>
+    <title>Escribania Loma</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="header">
-                <iframe src="menu/menu.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" height="30" width=100%>
-                </iframe>
+    <div class="grid">
+        <header class="menu">
+            <nav>
+                <div id="container__menu">
+                    <div class="navT">
+                        <div class="icon"></div>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li><i class="fa-solid fa-house"></i><a href="index.html">Escribania Lom<span
+                                        class="space">a</span></a></li>
+                            <li><i class="fa-solid fa-envelope"></i><a href="./form/form.html">Contact<span
+                                        class="space">o</span></a></li>
+                            <li><i class="fa-solid fa-map-location-dot"></i><a href="https://maps.google.com/maps/dir//Escriban%C3%ADa+Loma+Santiago+del+Estero+690+Tercer+Piso,+Oficina+309,+ABD+B1623+Ingeniero+Maschwitz+Provincia+de+Buenos+Aires/@-34.3953637,-58.7383885,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x95bc9f80bc046f49:0xcac6ed7f2b2861c2">Como
+                                    llega<span class="space">r</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="top">
+            <div class="contenedor">
+                <img src="img/indexmain.webp" alt="Avatar" class="image" style="width:100vw">
+                <div class="middle">
+                    <div class="container responsive text">
+                        <div class="maintitle">
+                            <h1>Escribania Loma</h1>
+                        </div>
+                        <div class="sndtitle"><a href="./form/form.html">Haga su consult<span class="space">a</span></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="ubi" id="llegar">
+            <div id="Mapa" class="responsive" style="text-align: center;">
+                <h2>Ubicación</h2>
             </div>
-        </nav>
-    </header>
-    <section>
-        <div id="Top" class="container responsive">
-            <img style="width: 100vw;" class="imgmain" src="img/indexmain.jpg" alt="main">
-            <div class="maintitle">
-                <h1>Escribanía Loma</h1>
-            </div>
-            <div class="sndtitle"><a href="#">Haga su consulta</a></div>
-        </div>
-    </section>
-    <section>
-        <div id="Testimonios" class="testimonios responsive">
-            <h2>Testimonios</h2>
-            <p>
-            <div class="tt responsive">
-                "Súper práctica y expeditiva, es más que recomendable, te asesora muchísimo, gracias de verdad"
-                <span style="font-weight: bold;">- Marcelo P</span>
-            </div>
-            <div class="tt responsive">
-                "Excelente atencion, "lo sabe todo" estoy muy agradecido"
-                <span style="font-weight: bold;">- Ricardo J</span>
-            </div>
-            <div class="tt responsive">
-                "Excelente escribana muy prolija y profesional. La recomiendo 100 %. Muy confiable en todo lo que hace."
-                <span style="font-weight: bold;">- Yanina G</span>
-            </div>
-            <div class="tt responsive">
-                "Excelente la atención de la escribana Loma, su predisposición, evacuó todas mis dudas. Trabajo
-                impecable."
-                <span style="font-weight: bold;">- Romina T</span>
-            </div>
-            <div class="tt responsive">
-                "Excelente profesional y persona. Totalmente recomendable."
-                <span style="font-weight: bold;">- Leandro F</span>
-            </div>
-            <div class="tt responsive">
-                "Excelente atencion y asesoramiento, un placer trabajar con esta escribania."
-                <span style="font-weight: bold;">- César H</span>
-            </div>
-            <div class="tt responsive">
-                "Positivo: Profesionalismo. Excelente Escribana, muy profesional y amable."
-                <span style="font-weight: bold;">- Leandro R</span>
-            </div>
-            </p>
-        </div>
-    </section>
-    <section>
-        <div id="Mapa" class="responsive" style="text-align: center;">
-            <h2>Ubicación</h2>
-        </div>
-        <div class="txtub responsive">
-            <p>
-                Santiago del Estero 690 Tercer Piso, Oficina 309, ABD, B1623 Ingeniero Maschwitz, Provincia de Buenos
-                Aires
-            </p>
-            <p>
-                Horario de atención: Lunes a Viernes de 8 a 14 hs.
-            </p>
-        </div>
-        <div class="responsive-map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13168.941364509807!2d-58.7383885!3d-34.3953637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcac6ed7f2b2861c2!2sEscriban%C3%ADa%20Loma!5e0!3m2!1ses-419!2sar!4v1662067261259!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-    <div id="acercade" class="caro responsive container">
-        <div class="caroimg responsive">
-            <img src="img/caro.jpg">
-        </div>
-        <div class="caroname responsive">
-            <h2>CAROLINA V. LOMA DE STIER,
-                <br>
-                Escribana
-            </h2>
-            <div class="desc responsive">
-                <p>Notaria Titular del Registro nº 7 de Escobar.</p>
-            </div>
-            <div class="ti3 responsive">
-                <h3>¿Qué es un Escribano?</h3>
-            </div>
-            <div class="ti3a responsive">
-                <p>Cumple con una función pública delegada por el Estado.
-                    <br>
-                    A través de la fe pública garantiza la
-                    seguridad jurídica.
+            <div class="txtub responsive">
+                <p>
+                    Santiago del Estero 690 Tercer Piso, Oficina 309, ABD, B1623 Ingeniero Maschwitz, Provincia de
+                    Buenos
+                    Aires
+                </p>
+                <p>
+                    Horario de atención: Lunes a Viernes de 8 a 14 hs.
                 </p>
             </div>
-        </div>
-    </div>
-    <footer>
-        <p class="responsive" style="text-align: center; color: gray;">
-            ©2019 Escribanía Carolina V. Loma de Stier. Todos los derechos reservados.
-        </p>
-        <p class="responsive" style="text-align: center; font-family: Cambria; color: gray;">
-            Developed by NIX Power Team
-        </p>
-    </footer>
-</body>
+            <div class="responsive-map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13168.941364509807!2d-58.7383885!3d-34.3953637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcac6ed7f2b2861c2!2sEscriban%C3%ADa%20Loma!5e0!3m2!1ses-419!2sar!4v1662067261259!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="caro">
+            <div class="container">
+                <div class="caroimg">
+                    <img src="img/caro.webp" alt="Carolina V. Loma De Stier, Escribana">
+                </div>
+                <div class="caroname responsive">
+                    <h2>CAROLINA V. LOMA DE STIER,
+                        <br>
+                        Escribana
+                    </h2>
+                    <div class="desc responsive">
+                        <p>Titular del Registro Notarial N°7 del Partido de Escobar, al que accedí por concurso público
+                            de
+                            oposición y antecedentes.</p>
+                    </div>
+                    <div class="desc responsive">
+                        <h3>¿Qué es un Escribano?</h3>
+                    </div>
+                    <div class="desc responsive">
+                        <p>Notario o funcionario público que da fe de los actos realizados ante él y que redacta los
+                            documentos correspondientes (contratos, testamentos, escrituras de compraventa, etc.).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testi">
+            <div class="testimonios responsive">
+                <h2>Testimonios</h2>
+                <p>
+                <div class="tt responsive testimoniom">
+                    "Súper práctica y expeditiva, es más que recomendable, te asesora muchísimo, gracias de verdad"
+                    <span style="font-weight: bold;">- Marcelo P</span>
+                </div>
+                <div class="tt responsive testimoniom">
+                    "Excelente atencion, "lo sabe todo" estoy muy agradecido"
+                    <span style="font-weight: bold;">- Ricardo J</span>
+                </div>
+                <div class="tt responsive testimonio">
+                    "Excelente escribana muy prolija y profesional. La recomiendo 100 %. Muy confiable en todo lo que hace."
+                    <span style="font-weight: bold;">- Yanina G</span>
+                </div>
+                <div class="tt responsive testimonio">
+                    "Excelente la atención de la escribana Loma, su predisposición, evacuó todas mis dudas. Trabajo impecable."
+                    <span style="font-weight: bold;">- Romina T</span>
+                </div>
+                <div class="tt responsive testimoniom">
+                    "Excelente profesional y persona. Totalmente recomendable."
+                    <span style="font-weight: bold;">- Leandro F</span>
+                </div>
+                <div class="tt responsive testimoniom">
+                    "Excelente atencion y asesoramiento, un placer trabajar con esta escribania."
+                    <span style="font-weight: bold;">- César H</span>
+                </div>
+                <div class="tt responsive testimoniom">
+                    "Positivo: Profesionalismo. Excelente Escribana, muy profesional y amable."
+                    <span style="font-weight: bold;">- Leandro R</span>
+                </div>
+                </p>
+            </div>
+        </section>
+        <section class="trami">
+            <div class="tramites responsive">
+                <h2 style="text-align: center;">Tramites</h2>
+                <button class="accordion"><span style="font-weight: bold;">Certificación de firma en formulario
+                        automotor
+                        (08, 02,
+                        04 etc)</span></button>
+                <div class="panel responsive">
+                    <p>Deberá contar con la siguiente documentación:
+                    <ul>
+                        <li> Formulario a firmar</li>
+                        <li> DNI original</li>
+                        <li> Título automotor original</li>
+                    </ul>
+                    Teniendo en cuenta esta información solicite un turno mediante WhatsApp <span
+                        style="font-weight: bold;"> +54 9
+                        11 4420-8573 </span> o al Tel: <span style="font-weight: bold;">0348- 4445933</span>.
+                    <br><br>
+                    Cualquier inquietud no dude en consultar,
+                    Muchas gracias.</p>
+                </div>
+                <button class="accordion"><span style="font-weight: bold;">Realización de contrato</span></button>
+                <div class="panel responsive">
+                    <p>
+                    <ul>
+                        <li> Si requiere solicitar la redacción/confección del contrato le pedimos se comunique al Tel:
+                            <span style="font-weight: bold;">0348-4445933.</span>
+                        </li>
 
+                        <li> Si requiere la certificación de firma en un contrato previamente confeccionado le
+                            solicitamos
+                            que mande
+                            el mismo al mail: <span style="font-weight: bold;">escribanaloma@yahoo.com.ar</span>
+                            De esta manera será verificada la documentación y se le asignará un turno por ese mismo
+                            medio.
+                        </li>
+                    </ul>
+                    En ambos casos al momento de la firma recuerde concurrir con DNI original. Cualquier inquietud no
+                    dude
+                    en
+                    consultar, muchas gracias.</p>
+                </div>
+                <button class="accordion"><span style="font-weight: bold;">Autorización de manejo para
+                        menores</span></button>
+                <div class="panel responsive">
+                    <p>
+                    <ul>
+                        <li> Foto DNI de ambos padres y del menor (frente y dorso)</li>
+                        <li> Foto legible partida de nacimiento del menor</li>
+                    </ul>
+                    En base a esto se le asignará un turno. El día pactado recuerde traer la misma documentación en
+                    original.
+                    Cualquier inquietud no dude en consultar, muchas gracias.</p>
+                </div>
+                <button class="accordion"><span style="font-weight: bold;">Autorización de viaje para
+                        menores</span></button>
+                <div class="panel responsive">
+                    <p>
+                    <ul>
+                        <li> Foto DNI de ambos padres y del menor (frente y dorso)</li>
+                        <li> Foto legible partida de nacimiento del menor</li>
+                    </ul>
+                    En base a esto se le asignará un turno. El día pactado recuerde traer la misma documentación en
+                    original.Cualquier inquietud no dude en consultar, muchas gracias.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="responsive" style="text-align: center; color: gray;">
+                ©2019 Escribanía Carolina V. Loma de Stier. Todos los derechos reservados.
+            </p>
+            <p class="responsive" style="text-align: center; font-family: Cambria; color: gray;">
+                Developed by NIX Power Team
+            </p>
+        </footer>
+    </div>
+    <!-- Info Acordeon -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <!-- Menu -->
+    <script>
+        $(".navT").on("click", function () {
+            $(this).toggleClass("active");
+            $("#menu").toggleClass("open");
+            $(".content").toggleClass("shift");
+
+
+        })
+    </script>
+</body>
+<script src="testimonios.js"></script>
 </html>
